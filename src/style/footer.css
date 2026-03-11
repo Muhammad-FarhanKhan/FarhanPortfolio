@@ -1,5 +1,6 @@
-
-
+/* -------------------------------
+   Footer Section
+--------------------------------*/
 .footer {
   background: black;
   color: white;
@@ -7,13 +8,11 @@
   display: flex;
   justify-content: space-between;
   gap: 180px;
-  height: 180px;
+  height: auto;
   width: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
-   margin-left: -50px;
- 
+  box-sizing: border-box;
 }
-
 
 .footer h3 {
   margin-bottom: 20px;
@@ -29,7 +28,6 @@
   margin-top: 18px;
   line-height: 1.6;
   font-size: 18px;
-  
 }
 
 .footer_center {
@@ -46,16 +44,14 @@
 }
 
 .footer_center ul li a {
-  color: #ffffff;;
+  color: #ffffff;
   transition: 0.3s;
   text-decoration: none;
   font-size: 18px;
-  
 }
 
 .footer_center ul li a:hover {
-color: blueviolet;
-
+  color: blueviolet;
 }
 
 .footer_right {
@@ -71,17 +67,80 @@ color: blueviolet;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 .footerBtn {
   text-decoration: none;
   color: black;
   font-size: 15px;
   font-weight: lighter;
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .footerBtn:hover {
-  color: #140a1e;;
+  color: #140a1e;
   cursor: pointer;
- 
+}
+
+/* -------------------------------
+   MEDIA QUERIES (Responsive)
+--------------------------------*/
+
+/* Large screens: 1920px – 1500px */
+@media (max-width:1920px) and (min-width:1500px) {
+  .footer h3 { font-size: 30px; }
+  .footer_left p,
+  .footer_center ul li a,
+  .footer_right p { font-size: 18px; }
+  .footer { padding: 80px 80px; gap: 150px; }
+}
+
+/* Desktop: 1500px – 1200px */
+@media (max-width:1500px) and (min-width:1200px) {
+  .footer h3 { font-size: 28px; }
+  .footer { padding: 70px 60px; gap: 120px; }
+}
+
+/* Desktop: 1200px – 1024px */
+@media (max-width:1200px) and (min-width:1024px) {
+  .footer h3 { font-size: 26px; }
+  .footer_left p,
+  .footer_center ul li a,
+  .footer_right p { font-size: 16px; }
+  .footer { padding: 60px 40px; gap: 80px; flex-wrap: wrap; }
+}
+
+/* Tablet: 1024px – 768px */
+@media (max-width:1024px) and (min-width:768px) {
+  .footer h3 { font-size: 24px; }
+.footer_left p,
+  .footer_center ul li a,
+  .footer_right p { font-size: 14px; }
+  .footer { padding: 40px 20px; gap: 30px; }
+  }
+
+
+/* Small tablets / mobiles: 768px – 480px */
+@media (max-width:768px) and (min-width:480px) {
+  .footer h3 { font-size: 22px; }
+  .footer_left p,
+  .footer_center ul li a,
+  .footer_right p { font-size: 14px; }
+  .footer { padding: 40px 20px; gap: 30px; }
+}
+
+/* Mobile: 480px – 350px */
+@media (max-width:480px) {
+  .footer h3 { font-size: 20px; }
+  .footer_left p,
+  .footer_center ul li a,
+  .footer_right p { font-size: 13px; }
+  .footer { padding: 30px 15px; gap: 20px; }
+}
+
+/* Very small mobile: below 350px */
+@media (max-width:350px) {
+  .footer h3 { font-size: 18px; }
+  .footer_left p,
+  .footer_center ul li a,
+  .footer_right p { font-size: 12px; }
+  .footer { padding: 25px 10px; gap: 15px; }
 }
