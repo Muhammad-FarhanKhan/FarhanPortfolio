@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FarhanPortfolio/static/css/main.9fa74ca2.css",
+    "main.js": "/FarhanPortfolio/static/js/main.67b70228.js",
+    "static/js/453.a7d99afe.chunk.js": "/FarhanPortfolio/static/js/453.a7d99afe.chunk.js",
+    "static/media/Donut Website UI1.png": "/FarhanPortfolio/static/media/Donut Website UI1.c9a0a4faa6041ce3f64c.png",
+    "static/media/Myimage1.png": "/FarhanPortfolio/static/media/Myimage1.35058f50b6d377e2af91.png",
+    "static/media/earnByKnowledge.png": "/FarhanPortfolio/static/media/earnByKnowledge.b1b41e5ce0c3ce5f7f73.png",
+    "static/media/webDevelop1.jpeg": "/FarhanPortfolio/static/media/webDevelop1.6aa25f5db25ca0d392f7.jpeg",
+    "static/media/VideoEditor.jpeg": "/FarhanPortfolio/static/media/VideoEditor.d87554d0ed2238c36cb4.jpeg",
+    "static/media/uiux.png": "/FarhanPortfolio/static/media/uiux.e36eee82e6dcce0f5856.png",
+    "static/media/logo.jpeg": "/FarhanPortfolio/static/media/logo.7a55eb9eb2b1f530065c.jpeg",
+    "index.html": "/FarhanPortfolio/index.html",
+    "main.9fa74ca2.css.map": "/FarhanPortfolio/static/css/main.9fa74ca2.css.map",
+    "main.67b70228.js.map": "/FarhanPortfolio/static/js/main.67b70228.js.map",
+    "453.a7d99afe.chunk.js.map": "/FarhanPortfolio/static/js/453.a7d99afe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fa74ca2.css",
+    "static/js/main.67b70228.js"
+  ]
+}
