@@ -5,6 +5,7 @@ import Home from "./pages/Home.jsx";
 import "./style/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact.jsx";
+import Services from "./pages/services.jsx";
 
 function App() {
     useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+         <Route path="/services" element={<Services />} />
       </Routes>
     </Router>
   );

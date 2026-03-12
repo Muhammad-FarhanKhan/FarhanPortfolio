@@ -6,7 +6,7 @@ import webDevelop from "../../image/Donut Website UI1.png"
 
 export default function RecentWork() {
   return (
-    <div className="workprocess_container">
+    <div id="projects" className="workprocess_container">
       <h1>MY RECENT WORK</h1>
 
       <div className="services">

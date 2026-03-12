@@ -1,0 +1,361 @@
+/* CONTACT SECTION */
+
+.contact_container{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+gap:100px;
+padding:80px 60px;
+background:#0e0714;
+color:white;
+width:100%;
+box-sizing:border-box;
+flex-wrap:wrap;
+border-radius: 50px;
+}
+
+/* LEFT SIDE */
+
+.contact_left{
+flex:1;
+max-width:550px;
+}
+
+.contact_left h2{
+text-align:center;
+margin-bottom:30px;
+font-size:40px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+ background: linear-gradient(100deg, #8F6DDB, #FFFFFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.contact_form{
+display:flex;
+flex-direction:column;
+gap:15px;
+font-family: serif;
+font-weight: bold;
+}
+
+.contact_form label{
+font-size:18px;
+}
+
+.contact_form input,
+.contact_form textarea{
+padding:12px;
+border-radius:6px;
+border:none;
+outline:none;
+font-size:16px;
+width:100%;
+font-family: serif;
+}
+
+.send_btn{
+margin-top:15px;
+padding:12px;
+background:#8F6DDB;
+color:white;
+border:none;
+border-radius:6px;
+font-size:25px;
+cursor:pointer;
+transition:0.3s;
+font-family: serif;
+font-weight: 800;
+
+}
+
+.send_btn:hover{
+background:#6c4fd1;
+}
+
+/* RIGHT SIDE */
+
+.contact_right{
+flex:1;
+max-width:420px;
+display:flex;
+flex-direction:column;
+gap:25px;
+margin-top:80px;
+font: bold;
+font-family: serif;
+
+}
+
+.contact_info{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:25px;
+
+}
+
+.icon{
+font-size:22px;
+color:#8F6DDB;
+}
+
+.contact_para{
+margin-top:20px;
+line-height:1.6;
+font-size:25px;
+color:#ddd;
+}
+
+
+/* ========================= */
+/* RESPONSIVE BREAKPOINTS */
+/* ========================= */
+/* 1500px */
+
+@media (max-width:1920px){
+
+.contact_container{
+gap:80px;
+padding:70px 250px;
+}
+
+.contact_left h2{
+font-size:36px;
+}
+
+}
+
+@media (max-width:1750px){
+
+.contact_container{
+gap:80px;
+padding:70px 200px;
+}
+
+.contact_left h2{
+font-size:36px;
+}
+
+}
+
+@media (max-width:1650px){
+
+.contact_container{
+gap:80px;
+padding:70px 170px;
+}
+
+.contact_left h2{
+font-size:36px;
+}
+
+}
+/* 1500px */
+
+@media (max-width:1500px){
+
+.contact_container{
+gap:80px;
+padding:70px 80px;
+}
+
+.contact_left h2{
+font-size:36px;
+}
+
+}
+
+
+/* 1200px */
+
+@media (max-width:1250px){
+
+.contact_container{
+gap:60px;
+padding:60px 40px;
+}
+
+.contact_left h2{
+font-size:34px;
+}
+
+.contact_form label{
+font-size:16px;
+}
+
+}
+
+@media (max-width:1150px){
+
+.contact_container{
+gap:60px;
+padding:60px 20px;
+}
+
+.contact_left h2{
+font-size:34px;
+}
+
+.contact_form label{
+font-size:16px;
+}
+
+}
+
+/* 1024px */
+
+@media (max-width:1024px){
+
+.contact_container{
+flex-direction:column;
+align-items:center;
+text-align:center;
+gap:100px;
+
+}
+
+.contact_left{
+max-width:500px;
+width:100%;
+
+}
+.contact_right{
+margin-top:0;
+max-width:600px;
+align-items:center;
+}
+
+.contact_info{
+justify-content:center;
+}
+
+}
+.send_btn{
+margin-left: 20px;
+}
+
+
+/* 768px */
+
+@media (max-width:768px){
+
+.contact_container{
+padding:50px 30px;
+}
+
+.contact_left h2{
+font-size:30px;
+}
+
+.contact_form input,
+.contact_form textarea{
+font-size:14px;
+}
+
+.send_btn{
+font-size:16px;
+margin-left: 20px;
+}
+
+}
+
+
+/* 600px */
+
+@media (max-width:670px){
+
+.contact_container{
+padding:40px 20px;
+}
+
+.contact_left h2{
+font-size:26px;
+margin-top: 50px;
+margin-bottom: 30px;
+}
+
+.contact_form input,
+.contact_form textarea{
+font-size:14px;
+width: 400px;
+margin-left: 40px;
+}
+.send_btn{
+    width: 300px;
+    margin-left: 100px;
+}
+.contact_form label{
+font-size:14px;
+}
+
+.contact_para{
+font-size:14px;
+}
+
+}
+
+
+
+@media (max-width:670px){
+
+.contact_container{
+padding:40px 20px;
+}
+
+.contact_left h2{
+font-size:26px;
+margin-top: 50px;
+margin-bottom: 30px;
+}
+
+.contact_form input,
+.contact_form textarea{
+font-size:14px;
+width: 300px;
+margin-left: 80px;
+}
+.send_btn{
+    width: 200px;
+    margin-left: 140px;
+}
+.contact_form label{
+font-size:14px;
+}
+
+.contact_para{
+font-size:14px;
+}
+
+}
+
+
+/* 400px */
+
+@media (max-width:400px){
+
+.contact_left h2{
+font-size:22px;
+}
+
+.contact_form input,
+.contact_form textarea{
+font-size:13px;
+padding:10px;
+}
+
+.send_btn{
+font-size:14px;
+padding:10px;
+}
+
+.contact_info{
+font-size:14px;
+}
+
+.icon{
+font-size:18px;
+}
+
+}
