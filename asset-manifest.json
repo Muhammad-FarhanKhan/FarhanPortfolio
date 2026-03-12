@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/FarhanPortfolio/static/css/main.5605fc63.css",
-    "main.js": "/FarhanPortfolio/static/js/main.3e1ae81f.js",
+    "main.css": "/FarhanPortfolio/static/css/main.9463cec0.css",
+    "main.js": "/FarhanPortfolio/static/js/main.fe3a7bea.js",
     "static/js/453.a7d99afe.chunk.js": "/FarhanPortfolio/static/js/453.a7d99afe.chunk.js",
     "static/media/Donut Website UI1.png": "/FarhanPortfolio/static/media/Donut Website UI1.c9a0a4faa6041ce3f64c.png",
+    "static/media/animation.png": "/FarhanPortfolio/static/media/animation.c9a0a4faa6041ce3f64c.png",
     "static/media/Myimage1.png": "/FarhanPortfolio/static/media/Myimage1.35058f50b6d377e2af91.png",
     "static/media/earnByKnowledge.png": "/FarhanPortfolio/static/media/earnByKnowledge.b1b41e5ce0c3ce5f7f73.png",
+    "static/media/database.jpeg": "/FarhanPortfolio/static/media/database.19dcd30298c2a3fba5eb.jpeg",
+    "static/media/responsive.jpg": "/FarhanPortfolio/static/media/responsive.d61e87c7d7bdf9613a34.jpg",
     "static/media/webDevelop1.jpeg": "/FarhanPortfolio/static/media/webDevelop1.6aa25f5db25ca0d392f7.jpeg",
+    "static/media/backend.jpeg": "/FarhanPortfolio/static/media/backend.e074c0b21fa671419598.jpeg",
     "static/media/VideoEditor.jpeg": "/FarhanPortfolio/static/media/VideoEditor.d87554d0ed2238c36cb4.jpeg",
+    "static/media/appDesign.jpg": "/FarhanPortfolio/static/media/appDesign.949eaa07f5dcd55abcc7.jpg",
+    "static/media/frontend.jpeg": "/FarhanPortfolio/static/media/frontend.831b906b5ee12ed7dd66.jpeg",
     "static/media/uiux.png": "/FarhanPortfolio/static/media/uiux.e36eee82e6dcce0f5856.png",
+    "static/media/webdesign.jpeg": "/FarhanPortfolio/static/media/webdesign.9a9c6222e39144a4fcaa.jpeg",
     "static/media/logo.jpeg": "/FarhanPortfolio/static/media/logo.7a55eb9eb2b1f530065c.jpeg",
     "index.html": "/FarhanPortfolio/index.html",
-    "main.5605fc63.css.map": "/FarhanPortfolio/static/css/main.5605fc63.css.map",
-    "main.3e1ae81f.js.map": "/FarhanPortfolio/static/js/main.3e1ae81f.js.map",
+    "main.9463cec0.css.map": "/FarhanPortfolio/static/css/main.9463cec0.css.map",
+    "main.fe3a7bea.js.map": "/FarhanPortfolio/static/js/main.fe3a7bea.js.map",
     "453.a7d99afe.chunk.js.map": "/FarhanPortfolio/static/js/453.a7d99afe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5605fc63.css",
-    "static/js/main.3e1ae81f.js"
+    "static/css/main.9463cec0.css",
+    "static/js/main.fe3a7bea.js"
   ]
 }
