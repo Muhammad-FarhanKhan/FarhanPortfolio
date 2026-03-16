@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/FarhanPortfolio/static/css/main.9463cec0.css",
-    "main.js": "/FarhanPortfolio/static/js/main.fe3a7bea.js",
+    "main.css": "/FarhanPortfolio/static/css/main.88027f1f.css",
+    "main.js": "/FarhanPortfolio/static/js/main.19a582a6.js",
     "static/js/453.a7d99afe.chunk.js": "/FarhanPortfolio/static/js/453.a7d99afe.chunk.js",
+    "static/media/JacketUI.mp4": "/FarhanPortfolio/static/media/JacketUI.910e0f12ccb1b35f5b8e.mp4",
     "static/media/Donut Website UI1.png": "/FarhanPortfolio/static/media/Donut Website UI1.c9a0a4faa6041ce3f64c.png",
     "static/media/animation.png": "/FarhanPortfolio/static/media/animation.c9a0a4faa6041ce3f64c.png",
     "static/media/Myimage1.png": "/FarhanPortfolio/static/media/Myimage1.35058f50b6d377e2af91.png",
@@ -18,12 +19,12 @@
     "static/media/webdesign.jpeg": "/FarhanPortfolio/static/media/webdesign.9a9c6222e39144a4fcaa.jpeg",
     "static/media/logo.jpeg": "/FarhanPortfolio/static/media/logo.7a55eb9eb2b1f530065c.jpeg",
     "index.html": "/FarhanPortfolio/index.html",
-    "main.9463cec0.css.map": "/FarhanPortfolio/static/css/main.9463cec0.css.map",
-    "main.fe3a7bea.js.map": "/FarhanPortfolio/static/js/main.fe3a7bea.js.map",
+    "main.88027f1f.css.map": "/FarhanPortfolio/static/css/main.88027f1f.css.map",
+    "main.19a582a6.js.map": "/FarhanPortfolio/static/js/main.19a582a6.js.map",
     "453.a7d99afe.chunk.js.map": "/FarhanPortfolio/static/js/453.a7d99afe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9463cec0.css",
-    "static/js/main.fe3a7bea.js"
+    "static/css/main.88027f1f.css",
+    "static/js/main.19a582a6.js"
   ]
 }
