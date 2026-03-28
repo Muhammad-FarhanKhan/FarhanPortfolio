@@ -1,8 +1,8 @@
 import { FaStar } from "react-icons/fa";
-import client1 from "../../image/logo.jpeg";
-import client2 from "../../image/logo.jpeg";
-import client3 from "../../image/logo.jpeg";
-import client4 from "../../image/logo.jpeg";
+import client1 from "../../image/David.jpeg";
+import client2 from "../../image/sarah.jpeg";
+import client3 from "../../image/Michael.jpeg";
+import client4 from "../../image/Emma.jpeg";
 
 import "../../style/reviews.css"
 

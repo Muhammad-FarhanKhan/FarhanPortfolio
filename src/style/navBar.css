@@ -1,0 +1,228 @@
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+ background: linear-gradient(
+    to right,
+    #621BDF 0%,
+      /* left 10% */
+    #0F0716 10%,
+    #0F0716 90%,   /* center 80% */
+ #0F0716 90%,
+    #621BDF 100%   /* right 10% */
+  );
+ 
+  color: white;
+  height: 50px;
+  position: fixed;
+ top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown 1s forwards;
+}
+
+@keyframes slideDown{
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+ .header img {
+    height: 55px;  
+    border-radius: 100%;
+    border: 1px solid black;    
+    cursor: pointer;   
+    
+  }
+
+.navbar h1{
+  font-size: 18px;
+  font-family: Times;
+  font-weight: bolder;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding-right: 0px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.navbar a:hover {
+  color: white;
+  background: linear-gradient(
+    to right,
+    #621BDF 0%,
+      /* left 10% */
+    #0F0716 10%,
+    #0F0716 90%,   /* center 80% */
+ #0F0716 90%,
+    #621BDF 100%   /* right 10% */
+  );
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navBtn{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.navBtn :hover {
+  color:  #6b06cf;
+  cursor: pointer;
+}
+
+
+
+/* ================= */
+/* Responsive */
+/* ================= */
+
+/* 1600px */
+@media (max-width:1920px){
+
+.navbar{
+padding:15px 20px;
+}
+
+.navLinks{
+gap:10px;
+}
+
+}
+@media (max-width:1850px){
+
+.navbar{
+padding:15px 20px;
+}
+
+.navLinks{
+gap:10px;
+}
+}
+/* 1600px */
+@media (max-width:1600px){
+
+.navbar{
+padding:15px 20px;
+}
+
+.navLinks{
+gap:20px;
+}
+
+}
+
+/* 1200px */
+@media (max-width:1200px){
+
+.navbar{
+padding:12px 20px;
+}
+
+.header img{
+height:45px;
+}
+
+.navbar h1{
+font-size:16px;
+}
+
+.navbar a{
+font-size:14px;
+}
+
+}
+
+/* --- Desktop se Mobile tak Smooth Transition --- */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 15px; /* Padding thodi kam */
+  }
+  .navbar h1 {
+    font-size: 16px; /* Heading thodi choti */
+  }
+  .navbar ul {
+    gap: 12px; /* Buttons ke beech ka gap kam */
+  }
+  .navbar a {
+    font-size: 13px; /* Font size kam */
+  }
+  .header img {
+    height: 45px; /* Logo size chota */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 10px;
+    height: auto; /* Height fixed se auto taake adjust ho sake */
+  }
+  .navbar h1 {
+    font-size: 10px;
+    /* Mobile par sirf logo dikhega, text hide kar sakte hain space ke liye */
+  }
+  .navbar ul {
+    gap: 8px;
+    padding-right: 5px;
+  }
+  .navbar a {
+    font-size: 11px; /* Bohat chota font taake sab fit aa jaye */
+    padding: 5px 8px; /* Hover padding bhi kam */
+  }
+  .header img {
+    height: 35px;
+  }
+}
+
+@media (max-width: 628px) {
+  /* Ultra small screens (chote phones) */
+  .navbar ul {
+    gap: 5px;
+  }
+  .navbar a {
+    font-size: 8px;
+    letter-spacing: -0.5px; /* Letters ko thoda kareeb kar diya */
+  }
+}
+
+@media (max-width: 510px) {
+  /* Ultra small screens (chote phones) */
+  .navbar ul {
+    gap: 2px;
+  }
+  .navbar a {
+    font-size: 7px;
+    letter-spacing: -0.5px; /* Letters ko thoda kareeb kar diya */
+  }
+}
+

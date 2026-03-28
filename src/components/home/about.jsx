@@ -1,4 +1,3 @@
-
 import img2 from "../../image/Myimage1.png";
 import Typewriter from "../../components/Typewriter";
 import "../../style/about.css"

@@ -1,4 +1,4 @@
-import "../../style/service.css";
+import "../../style/ServiceAndRecentWork.css";
 import database from "../../image/database.jpeg"
 import uiux from "../../image/uiux.png"
 import webDevelop from "../../image/webDevelop1.jpeg"

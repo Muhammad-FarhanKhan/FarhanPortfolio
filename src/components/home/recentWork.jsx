@@ -1,12 +1,15 @@
-import "../../style/service.css";
+import "../../style/ServiceAndRecentWork.css";
 import videoeditor from "../../image/VideoEditor.jpeg"
-import uiux from "../../image/earnByKnowledge.png"
+import EarnByKnowledge from "../../image/EarnByKnowledge.png"
 import webDevelop from "../../image/Donut Website UI1.png"
 import JacketUI from "../../video/JacketUI.mp4";
 import { useRef } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 export default function RecentWork() {
+
+  const navigate = useNavigate();
 
     const videoRef = useRef(null);
 
@@ -24,16 +27,15 @@ export default function RecentWork() {
       <h1>MY RECENT WORK</h1>
 
       <div className="services">
-        {" "}
+     
         <div className="serviceBox">
-          {" "}
-          <img src={uiux} alt="Service 1" /> <h3>EARN BY KNOWLEDGE</h3>{" "}
-        </div>{" "}
+          <img src={EarnByKnowledge} alt="Service 1" /> <h3>EarnByKnowledge Web</h3>{" "}
+        </div>
+
         <div className="serviceBox">
-          {" "}
-          <img src={webDevelop} alt="Service 2" /> <h3>STRAWBERRY DONUT</h3>{" "}
-        </div>{" "}
-   
+          <img src={webDevelop} alt="Service 2" /> <h3>DONUT DESIGN</h3>{" "}
+        </div>
+
        <div
           className="serviceBox"
           onMouseEnter={playVideo}
@@ -47,14 +49,14 @@ export default function RecentWork() {
             playsInline
             className="serviceVideo"
           />                                                                
-          <h3>JACKET UI</h3>
+          <h3>JACKET DESIGN</h3>
         </div>
 
    
       </div>
     
   <div className="exploreBtnBox">
-    <button className="exploreBtn">EXPLORE MORE!</button>
+    <button className="exploreBtn" onClick={() => navigate("../recentWork")}>VIEW MORE!</button>
   </div>
 
     </div>
