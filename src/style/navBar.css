@@ -1,0 +1,326 @@
+/* --- Navbar Base Styling --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px; /* Padding ko fix kiya */
+  background: linear-gradient(to right, #621BDF 0%, #0F0716 10%, #0F0716 90%, #621BDF 100%);
+  color: white;
+  height: 70px; /* Height thodi behtar ki */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown 1s forwards;
+}
+
+@keyframes slideDown {
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #621BDF;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.navbar h1 {
+  font-size: 20px;
+  font-family: 'Times New Roman', serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+/* --- Navigation Links --- */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links a, .navBtn {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  transition: 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* Hover Effect */
+.nav-links a:hover, .navBtn:hover {
+  background: rgba(98, 27, 223, 0.2);
+  color: #621BDF;
+}
+
+/* --- Hamburger Icon Styling --- */
+.hamburger {
+  display: none; /* Desktop par hide */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+
+/* --- Responsive (Large Laptops 1281px - 1440px) --- */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .navbar {
+    padding: 0 80px; /* Sides par kafi zyada space taake content center mein focus rahe */
+    height: 75px; /* Height thodi barhai premium feel ke liye */
+  }
+
+  .navbar h1 {
+    font-size: 22px; /* Title thoda bara */
+    letter-spacing: 1.5px;
+  }
+
+  .hamburger {
+    display: none; /* Hamburger hamesha hidden */
+  }
+
+  .nav-links {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    gap: 15px; /* Links ke darmiyan kafi khula gap */
+    box-shadow: none;
+    border: none;
+  }
+
+  .nav-links a, .navBtn {
+    font-size: 15px; /* Desktop standard font size */
+    padding: 10px 15px;
+  }
+
+  .header img {
+    height: 55px; /* Logo thoda bara aur clear */
+    width: 55px;
+  }
+} 
+
+/* --- Responsive (Standard Desktop 1025px - 1280px) --- */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .navbar {
+    padding: 0 50px; /* Sides par padding thori barha di */
+    height: 70px;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  /* Ensure hamburger is hidden */
+  .hamburger {
+    display: none;
+  }
+
+  /* Horizontal Links Layout */
+  .nav-links {
+    position: static; 
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    border-left: none;
+    gap: 10px; /* Links ke darmiyan behtar gap */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links a, .navBtn {
+    font-size: 14px; /* Standard font size */
+    padding: 5px 12px;
+  }
+
+  .header img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* --- Responsive (Laptops/Landscape Tablets 769px - 1024px) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0 30px;
+    height: 70px;
+  }
+
+  .navbar h1 {
+    font-size: 14px; /* Balanced size */
+  }
+
+  /* Hamburger ko yahan hide kar dena hai */
+  .hamburger {
+    display: none; 
+  }
+
+  /* Links ko wapas horizontal row mein lana */
+  .nav-links {
+    position: static; /* Fixed position khatam */
+    display: flex;
+    flex-direction: row; /* Row layout */
+    height: auto;
+    width: auto;
+    background: transparent; /* Background remove */
+    box-shadow: none;
+    border-left: none;
+    gap: 5px; /* Links ke darmiyan munasib gap */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links a, .navBtn {
+    font-size: 12px; /* Space fit karne ke liye thora chota font */
+    padding: 5px 10px;
+    white-space: nowrap; /* Text ko wrap hone se rokega */
+  }
+
+  .header img {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+
+/* --- Responsive (Tablet 481px - 768px) --- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    padding: 0 30px;
+    height: 65px;
+  }
+
+  .navbar h1 {
+    font-size: 18px;
+  }
+
+  .header img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .hamburger {
+    display: flex; /* Tablet par bhi hamburger show hoga */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden state */
+    height: 70vh;
+    width: 40%; /* Tablet par width thori kam (50%) rakhi hai */
+    background: #0F0716;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -8px 0 15px rgba(0,0,0,0.4);
+    border-left: 2px solid #621BDF;
+  }
+
+  .nav-links.show {
+    right: 0; /* Slide in effect */
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a, .navBtn {
+    font-size: 20px; /* Tablet par text thora aur bara taake readability achi ho */
+    padding: 10px 0;
+  }
+}
+
+
+/* --- Responsive (Mobile 320px - 480px) --- */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 20px; 
+    height: 60px;
+  }
+
+  .navbar h1 {
+    font-size: 12px; 
+  }
+
+  .header img {
+    height: 40px; 
+    width: 40px;
+  }
+
+  .hamburger {
+    display: flex; 
+  }
+
+ 
+  .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(2) { opacity: 0; }
+  .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Shuru mein screen se bahar */
+    height: 70vh;
+    width: 50%; /* Menu ki width */
+    background: #0F0716; /* Dark background */
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s ease;
+    box-shadow: -10px 0 20px rgba(0,0,0,0.5);
+    border-left: 1px solid #621BDF;
+    z-index: 999;
+  }
+
+
+  .nav-links.show {
+    right: 0; 
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a, .navBtn {
+    font-size: 18px; /* Mobile menu mein bare links asani se click hote hain */
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+  }
+
+  .nav-links a:hover {
+    background: rgba(98, 27, 223, 0.1);
+    color: #621BDF;
+  }
+}

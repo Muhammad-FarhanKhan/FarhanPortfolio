@@ -1,0 +1,426 @@
+.skills_section {
+  padding: 60px 60px;
+  text-align: center;
+  width: 95%;
+  max-width: 1500px;
+  background-color: #140a1e;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.skills_section h2 {
+  font-size: 45px;
+  margin-bottom: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(100deg, #8f6ddb, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.skills_section p {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  margin: 8px auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* Skills grid */
+.skills_row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-bottom: 80px;
+  justify-content: center;
+  text-align: center;
+}
+
+.skill_card {
+  background-color: black;
+  border-radius: 40px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(153, 26, 226, 0.08);
+  transition: 0.3s ease;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.skill_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 0px rgb(109, 0, 161);
+}
+
+.skill_card h4 {
+  margin: 15px 0 10px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+.icon {
+  font-size: 80px;
+}
+
+/* Progress bar */
+.progress {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 22px;
+  margin-top: 10px;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: #8f53ca;
+  color: white;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+/* Icon Colors */
+.html {
+  color: #e34c26;
+}
+.css {
+  color: #264de4;
+}
+.js {
+  color: #efd216;
+}
+.react {
+  color: #61dbfb;
+}
+.php {
+  color: #787cb5;
+}
+.mysql {
+  color: #00758f;
+}
+.tailwind {
+  color: #38bdf8;
+}
+.figma {
+  color: #a259ff;
+}
+
+
+/* --- Skills Section: 1440px - 1920px (Full HD / Ultrawide) --- */
+@media (min-width: 1441px) {
+  .skills_section {
+    padding: 80px 60px;
+    width: 95%;
+    max-width: 1500px; /* Content ko center mein lock kiya */
+    margin: 100px auto 0;
+    border-radius: 40px;
+  }
+
+  .skills_section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+  }
+
+  .skills_row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px; /* Original large gap for premium look */
+    margin-bottom: 80px;
+  }
+
+  .skill_card {
+    width: 280px; /* Original fixed width */
+    padding: 25px 10px;
+    border-radius: 40px;
+  }
+
+  .icon {
+    font-size: 80px; /* Full size icons */
+  }
+
+  .skill_card h4 {
+    font-size: 1.8rem;
+    margin: 20px 0 15px;
+  }
+
+  .progress {
+    height: 22px;
+    margin-top: 15px;
+  }
+
+  .progress span {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .skills_section p {
+    font-size: 1.3rem;
+    max-width: 900px;
+  }}
+
+
+
+  /* --- Skills Section: 1281px - 1441px (Large Laptops) --- */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .skills_section {
+    padding: 70px 50px;
+    width: 95%;
+    max-width: 1350px;
+    margin-top: 80px;
+  }
+
+  .skills_section h2 {
+    font-size: 3.2rem;
+    margin-bottom: 50px;
+  }
+
+  .skills_row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px; /* Balanced gap for mid-size desktop */
+    margin-bottom: 70px;
+  }
+
+  .skill_card {
+    width: 100%;
+    max-width: 270px;
+    padding: 20px 10px;
+    border-radius: 35px;
+  }
+
+  .icon {
+    font-size: 75px; /* Professional large icons */
+  }
+
+  .skill_card h4 {
+    font-size: 1.7rem;
+  }
+
+  .progress {
+    height: 20px;
+  }
+
+  .progress span {
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  .skills_section p {
+    font-size: 1.25rem;
+    max-width: 850px;
+  }
+}
+
+
+/* --- Skills Section: 1025px - 1280px (Standard Desktop) --- */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .skills_section {
+    padding: 60px 40px;
+    width: 95%;
+    max-width: 1200px;
+  }
+
+  .skills_section h2 {
+    font-size: 3rem;
+  }
+
+  .skills_row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; /* Wider gap for desktop */
+    margin-bottom: 60px;
+  }
+
+  .skill_card {
+    width: 100%;
+    max-width: 260px;
+    padding: 20px 0px;
+    border-radius: 35px;
+  }
+
+  .icon {
+    font-size: 70px; /* Icons size increased */
+  }
+
+  .skill_card h4 {
+    font-size: 1.6rem;
+  }
+
+  .progress {
+    height: 20px;
+  }
+
+  .progress span {
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  .skills_section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* --- Skills Section: 769px - 1024px (Laptops/Landscape Tablets) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills_section {
+    padding: 50px 30px;
+    width: 95%;
+    margin-top: 40px;
+  }
+
+  .skills_section h2 {
+    font-size: 2.8rem;
+  }
+
+  /* Wapas 4 columns par shift */
+  .skills_row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Standard spacing */
+    margin-bottom: 30px;
+  }
+
+  .skill_card {
+    width: 100%; /* Card cell ke hisab se expand hoga */
+    max-width: 220px; /* Badi screens par over-stretch hone se bachane ke liye */
+    padding: 5px;
+    border-radius: 30px;
+  }
+
+  .icon {
+    font-size: 60px;
+  }
+
+  .skill_card h4 {
+    font-size: 1.4rem;
+  }
+
+  .progress {
+    height: 18px;
+  }
+
+  .progress span {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+  .skills_section p {
+    font-size: 1.15rem;
+    width: 85%;
+  }
+}
+
+
+/* --- Skills Section: 481px - 768px (Tablets - 4 Columns) --- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .skills_section {
+    padding: 40px 10px;
+    width: 98%; /* Screen space maximize karne ke liye */
+  }
+
+  .skills_section h2 {
+    font-size: 2rem;
+  }
+
+  /* 4 Columns setup */
+  .skills_row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Gap kam kiya taake 4 fit ayein */
+    margin-bottom: 40px;
+  }
+
+  .skill_card {
+    width: 100%; 
+    padding: 12px 0px; /* Compact padding */
+    border-radius: 20px;
+  }
+
+  .icon {
+    font-size: 45px; /* Icon size chota kiya */
+  }
+
+  .skill_card h4 {
+    font-size: 1rem; /* Text size chota kiya */
+    margin: 8px 0;
+  }
+
+  .progress {
+    height: 14px;
+    margin-top: 5px;
+  }
+
+  .progress span {
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .skills_section p {
+    font-size: 1rem;
+    width: 95%;
+  }
+}
+
+/* --- Skills Section: 320px - 480px --- */
+@media (max-width: 480px) {
+  .skills_section {
+    padding: 30px 30px;
+    margin: 40px auto 0;
+    width: 95%;
+    border-radius: 15px;
+  }
+
+  .skills_section h2 {
+    font-size: 1.5rem; /* Heading choti ki */
+    margin-bottom: 20px;
+  }
+
+  /* Grid ko 2 columns mein kar diya */
+  .skills_row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; /* Gap kam kiya taake fit ayein */
+    margin-bottom: 30px;
+  }
+
+  .skill_card {
+    width: 100%; /* Box width grid cell ke mutabiq */
+    padding: 15px 0px;
+    border-radius: 20px;
+  }
+
+  .icon {
+    font-size: 40px; /* Icon size chota kiya */
+  }
+
+  .skill_card h4 {
+    font-size: 1.1rem; /* Skill name size kam kiya */
+    margin: 10px 0;
+  }
+
+  /* Progress Bar for Mobile */
+  .progress {
+    height: 12px;
+    margin-top: 8px;
+  }
+
+  .progress span {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .skills_section p {
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 360px) {
+  .skills_row {
+    gap: 10px;
+  }
+  .skill_card h4 {
+    font-size: 0.9rem;
+  }
+}

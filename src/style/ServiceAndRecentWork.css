@@ -1,0 +1,402 @@
+/* Work Process Section */
+.workprocess_container {
+  background-color: #060709;
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: slideDown 1.5s forwards;
+}
+
+/* Heading */
+.workprocess_container h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 55px;
+  background: linear-gradient(120deg, #764cd1, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Services container */
+.services {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Service box */
+.serviceBox {
+  width: 400px;
+  max-width: 90%;
+  background: #111;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  transition: 0.3s ease;
+  margin-top: 60px;
+  box-shadow: 4px 4px 0px rgba(146, 110, 225, 0.5);
+}
+
+.serviceBox img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.serviceBox h3 {
+  margin-top: 15px;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.serviceBox:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+  color: #926ee1;
+  box-shadow: 0 15px 35px rgba(65, 20, 65, 0.6);
+}
+
+.serviceVideo{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.serviceBox:hover .serviceVideo{
+  transform: scale(1.1);
+}
+
+/* Button */
+.exploreBtnBox {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.exploreBtn {
+  padding: 12px 30px;
+  font-size: 30px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.exploreBtn:hover {
+  background: #333;
+  transform: translateY(-3px);
+}
+
+
+/* --- Work Process: 1440px - 1920px (Full HD / Ultrawide) --- */
+@media (min-width: 1442px) {
+  .workprocess_container {
+    padding: 100px 10%; /* Sides par wide padding balance ke liye */
+  }
+
+  .workprocess_container h1 {
+    font-size: 4rem; /* Badi screen par heading mazeed dominant */
+    margin-bottom: 60px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 60px; /* Maximum gap for premium spacing */
+    justify-content: center;
+    max-width: 1600px; /* Content ko center mein lock kiya */
+    margin: 0 auto;
+  }
+
+  .serviceBox {
+    width: 420px; /* Thora bara size for wide screens */
+    margin-top: 70px;
+    border-radius: 20px;
+  }
+
+  .serviceBox h3 {
+    font-size: 1.6rem;
+    padding: 25px 15px;
+  }
+
+  .serviceBox img, 
+  .serviceVideo {
+    aspect-ratio: 16/9;
+  }
+
+  .exploreBtnBox {
+    margin-top: 100px;
+  }
+
+  .exploreBtn {
+    font-size: 2.2rem;
+    padding: 16px 50px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/* --- Work Process: 1281px - 1441px (Large Laptops) --- */
+@media (min-width: 1281px) and (max-width: 1441px) {
+  .workprocess_container {
+    padding: 80px 60px;
+  }
+
+  .workprocess_container h1 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: nowrap; /* 1 Row mein 3 boxes */
+    gap: 40px; /* Wider gap for better look */
+    justify-content: center;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+
+  .serviceBox {
+    width: 400px; /* Original design width */
+    margin-top: 60px;
+    border-radius: 15px;
+  }
+
+  .serviceBox h3 {
+    font-size: 1.5rem;
+    padding: 20px 10px;
+  }
+
+  .serviceBox img, 
+  .serviceVideo {
+    aspect-ratio: 16/9;
+  }
+
+  .exploreBtnBox {
+    margin-top: 80px;
+  }
+
+  .exploreBtn {
+    font-size: 2rem; /* Original size */
+    padding: 14px 40px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/* --- Work Process: 1025px - 1280px (Standard Desktop) --- */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .workprocess_container {
+    padding: 60px 40px;
+  }
+
+  .workprocess_container h1 {
+    font-size: 3.2rem;
+    margin-bottom: 40px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: nowrap; /* 1 Row layout */
+    gap: 30px; 
+    justify-content: center;
+    max-width: 1200px;
+  }
+
+  .serviceBox {
+    width: 32%; /* 3 boxes perfectly aligned */
+    max-width: 380px; 
+    margin-top: 50px;
+    border-radius: 12px;
+  }
+
+  .serviceBox h3 {
+    font-size: 1.4rem;
+    padding: 15px 10px 20px;
+  }
+
+  .serviceBox img, 
+  .serviceVideo {
+    aspect-ratio: 16/9;
+  }
+
+  .exploreBtnBox {
+    margin-top: 70px;
+  }
+
+  .exploreBtn {
+    font-size: 1.8rem;
+    padding: 12px 35px;
+    width: fit-content;
+    margin: 0 auto;
+    display: inline-block; /* Centering fix */
+  }
+}
+
+
+/* --- Work Process: 769px - 1024px (Laptops/Landscape Tablets) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .workprocess_container {
+    padding: 50px 30px;
+  }
+
+  .workprocess_container h1 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: nowrap; /* 1 Row mein 3 boxes */
+    gap: 25px; 
+    justify-content: center;
+  }
+
+  .serviceBox {
+    width: 30%; /* Balanced width for laptop screens */
+    margin-top: 40px;
+    border-radius: 12px;
+  }
+
+  .serviceBox h3 {
+    font-size: 1.2rem; /* Heading size behtar kiya */
+    padding: 10px 5px 15px;
+  }
+
+  .serviceBox img, 
+  .serviceVideo {
+    aspect-ratio: 16/9;
+  }
+
+  .exploreBtnBox {
+    margin-top: 60px;
+  }
+
+  .exploreBtn {
+    font-size: 1.6rem; /* Standard size for desktop feel */
+    padding: 12px 30px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/* --- Work Process: 481px - 768px (Tablets) --- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .workprocess_container {
+    padding: 40px 15px;
+  }
+
+  .workprocess_container h1 {
+    font-size: 2.2rem; /* Heading size for tablets */
+    margin-bottom: 30px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: nowrap; /* 1 Row mein hi rahenge */
+    gap: 15px; /* Mobile se zyada space */
+    justify-content: center;
+  }
+
+  .serviceBox {
+    width: 31%; /* 3 boxes in one row */
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+
+  .serviceBox h3 {
+    font-size: 0.9rem; /* Clear text for tablet */
+    padding: 0 5px 10px;
+  }
+
+  .serviceBox img, 
+  .serviceVideo {
+    aspect-ratio: 16/9; /* Wapas standard ratio par */
+  }
+
+  .exploreBtnBox {
+    margin-top: 50px;
+  }
+
+  .exploreBtn {
+    font-size: 1.4rem;
+    padding: 10px 25px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/* --- Work Process: 320px - 480px --- */
+@media (max-width: 480px) {
+  .workprocess_container {
+    padding: 30px 10px;
+  }
+
+  .workprocess_container h1 {
+    font-size: 1.5rem; /* Heading choti ki taake 1 line mein aaye */
+    margin-bottom: 20px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: nowrap; /* 3 boxes in 1 row */
+    gap: 8px; /* Bohat kam gap */
+    padding: 0 5px;
+  }
+
+  .serviceBox {
+    width: 32%; /* Equal distribution */
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0px rgba(146, 110, 225, 0.4); /* Shadow choti ki */
+  }
+
+  .serviceBox h3 {
+    font-size: 0.6rem; /* Text size bohat chota taake fit aaye */
+    margin-top: 8px;
+    padding: 0 2px 5px;
+    line-height: 1.2;
+  }
+
+  /* Video/Image settings for small row */
+  .serviceBox img, 
+  .serviceVideo {
+    aspect-ratio: 1/1; /* Mobile par square shape zyada jagah bachati hai */
+    border-radius: 4px;
+  }
+
+  /* Explore Button adjustment */
+  .exploreBtnBox {
+    margin-top: 40px;
+  }
+
+  .exploreBtn {
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    width: 60%; /* Button tap friendly */
+    margin: 0 auto;
+  }
+}
+
+/* Bohat choti screens ke liye (iPhone SE etc) */
+@media (max-width: 340px) {
+  .serviceBox h3 {
+    font-size: 0.5rem;
+  }
+  .workprocess_container h1 {
+    font-size: 1.2rem;
+  }
+}

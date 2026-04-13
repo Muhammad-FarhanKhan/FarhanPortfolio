@@ -1,0 +1,300 @@
+
+.footer {
+  background: black;
+  color: white;
+  padding: 80px 90px;
+  display: flex;
+  justify-content: space-between;
+  gap: 180px;
+  height: auto;
+  width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+.footer h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.footer_left {
+  flex: 1;
+}
+
+.footer_left p {
+  margin-top: 18px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.footer_center {
+  flex: 1;
+}
+
+.footer_center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_center ul li {
+  margin-bottom: 13px;
+}
+
+.footer_center ul li a {
+  color: #ffffff;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer_center ul li a:hover {
+  color: blueviolet;
+}
+
+.footer_right {
+  flex: 1;
+}
+
+.footer_right p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footerBtn {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footerBtn:hover {
+  color: #140a1e;
+  cursor: pointer;
+}
+
+
+/* --- Footer Section: 1440px - 1920px (Full HD / Ultrawide) --- */
+@media (min-width: 1442px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 10%; /* Sides par wide padding taake content center rahe */
+    gap: 180px; /* Aapka original gap wapas aa gaya */
+    justify-content: center;
+    text-align: left;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .footer_left, 
+  .footer_center, 
+  .footer_right {
+    display: block;
+    flex: 1;
+  }
+
+  .footer h3 {
+    font-size: 28px; /* Original Heading Size */
+    margin-bottom: 25px;
+  }
+
+  .footer_left p, 
+  .footer_center ul li a, 
+  .footer_right p {
+    font-size: 18px; /* Original Text Size */
+  }
+
+  .footer_right p {
+    font-size: 20px;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+}
+
+
+/* --- Footer Section: 1281px - 1441px (Large Laptops) --- */
+@media (min-width: 1281px) and (max-width: 1441px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 70px;
+    gap: 120px; /* Original 180px ke qareeb, balanced for 1440px */
+    justify-content: center; /* Content ko center mein focus rakha */
+    text-align: left;
+  }
+
+  .footer_left, 
+  .footer_center, 
+  .footer_right {
+    display: block;
+    flex: 1;
+    max-width: 400px; /* Taake content bohat zyada stretch na ho */
+  }
+
+  .footer h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .footer_left p, 
+  .footer_center ul li a, 
+  .footer_right p {
+    font-size: 18px; /* Original font sizes */
+  }
+
+  .footer_right p {
+    font-size: 20px;
+    justify-content: flex-start;
+  }
+}
+
+/* --- Footer Section: 1025px - 1280px (Standard Desktop) --- */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .footer {
+    display: flex;
+    flex-direction: row; 
+    padding: 70px 60px; /* Thori side padding balance ke liye */
+    gap: 80px; /* Original 180px ko yahan 80px kiya taake desktop par fit aaye */
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer_left, 
+  .footer_center, 
+  .footer_right {
+    display: block;
+    flex: 1;
+  }
+
+  .footer h3 {
+    font-size: 26px; /* Heading size optimized */
+  }
+
+  .footer_left p, 
+  .footer_center ul li a, 
+  .footer_right p {
+    font-size: 17px;
+  }
+
+  .footer_right p {
+    font-size: 19px;
+    justify-content: flex-start;
+  }
+} 
+
+/* --- Footer Section: 769px - 1024px (Laptops) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    flex-direction: row; /* Wapas horizontal layout */
+    padding: 60px 40px;
+    gap: 40px; /* Gap kam kiya taake 3 sections fit ayein */
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  /* Teeno sections visible */
+  .footer_left, 
+  .footer_center, 
+  .footer_right {
+    display: block;
+    flex: 1;
+  }
+
+  .footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .footer_left p, 
+  .footer_center ul li a, 
+  .footer_right p {
+    font-size: 16px;
+  }
+
+  .footer_right p {
+    font-size: 18px; /* Contact icons thore bare */
+    justify-content: flex-start;
+  }
+}
+
+/* --- Footer Section: 481px - 768px (Tablets - Stacked) --- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Content uper-niche rahega */
+    padding: 50px 20px;
+    gap: 40px; /* Sections ke darmiyan space */
+    text-align: center;
+    align-items: center;
+  }
+
+  /* Footer Center ko hide kar diya */
+  .footer_center {
+    display: none;
+  }
+
+  .footer_left, 
+  .footer_right {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+  }
+
+  .footer h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .footer_left p, 
+  .footer_right p {
+    font-size: 17px;
+    justify-content: center; /* Icons ko center align kiya */
+  }
+
+  .footer_right p {
+    margin-bottom: 15px;
+  }
+}
+
+/* --- Footer Section: 320px - 480px --- */
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column; 
+    padding: 40px 20px; 
+    text-align: center;
+    gap: 0; /* Gap khatam kiya kyunke ab sirf ek hi section hai */
+  }
+
+  /* Left aur Center sections ko hide kar diya */
+  .footer_left, 
+  .footer_center {
+    display: none;
+  }
+
+  .footer_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .footer_right p {
+    font-size: 16px;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .footerBtn {
+    font-size: 14px;
+  }
+}

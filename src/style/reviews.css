@@ -1,0 +1,276 @@
+
+
+.testimonial_section {
+  width: 93%;
+  padding: 40px 40px;
+ background-color: #140a1e;
+ border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+ 
+}
+.testimonial_section h2{
+    margin-bottom: 50px;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.testimonial_intro {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider_track {
+  display: flex;
+  width: calc(250px * 16); /* 8 + 8 duplicate */
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonial_card {
+  width: 250px;
+  background: black;
+  margin: 0 15px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  flex-shrink: 0;
+}
+
+.stars {
+  color: #f1c40f;
+  margin-bottom: 15px;
+}
+
+.client_info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.client_info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.client_info h4 {
+    color: white;
+  margin: 0;
+}
+
+.client_info span {
+  font-size: 12px;
+  color: white;
+  
+}
+
+.message {
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
+
+
+/* --- Testimonial Section: 1025px - 1280px (Standard Desktop) --- */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .testimonial_section {
+    width: 90%;
+    max-width: 1150px; /* Content ko center mein lock kiya */
+    padding: 60px 40px;
+    margin: 100px auto 0;
+    border-radius: 25px;
+  }
+
+  .testimonial_section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 45px;
+  }
+
+  .testimonial_intro {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin-bottom: 60px;
+  }
+
+  .testimonial_card {
+    width: 260px; /* Thoda sa size increase kiya */
+    margin: 0 20px; /* Gaps behtar kiye */
+    padding: 15px;
+  }
+
+  .message {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .client_info img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* --- Testimonial Section: 769px - 1024px (Laptops) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .testimonial_section {
+    width: 92%;
+    padding: 50px 30px;
+    margin: 80px auto 0;
+    border-radius: 20px;
+  }
+
+  .testimonial_section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .testimonial_intro {
+    font-size: 1.1rem;
+    max-width: 80%;
+    margin-bottom: 50px;
+  }
+
+  .testimonial_card {
+    width: 250px; /* Original size scale */
+    margin: 0 15px;
+    padding: 10px;
+  }
+
+  .client_info img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .message {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* --- Testimonial Section: 481px - 768px (Tablets) --- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .testimonial_section {
+    width: 95%;
+    padding: 40px 20px;
+    margin: 60px auto 0; /* Horizontal center */
+    border-radius: 20px;
+  }
+
+  .testimonial_section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .testimonial_intro {
+    font-size: 1rem;
+    max-width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .testimonial_card {
+    width: 230px; /* Tablet optimized width */
+    margin: 0 12px;
+    padding: 10px;
+  }
+
+  .client_info img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .message {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+
+/* --- Testimonial Section: 320px - 480px --- */
+@media (max-width: 480px) {
+  .testimonial_section {
+    width: 95%;
+    padding: 30px 5px; /* Side padding kam kar di */
+    margin-top: 50px;
+    margin-left: auto; /* Center alignment */
+    margin-right: auto;
+    border-radius: 15px;
+  }
+
+  .testimonial_section h2 {
+    font-size: 1.5rem; /* Heading choti ki */
+    margin-bottom: 20px;
+  }
+
+  .testimonial_intro {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  /* Slider adjustments for mobile */
+  .slider_track {
+    width: calc(200px * 16); /* Card width ke mutabiq track adjust kiya */
+  }
+
+  .testimonial_card {
+    width: 200px; /* Card width thori kam ki */
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .client_info img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .client_info h4 {
+    font-size: 0.9rem;
+  }
+
+  .client_info span {
+    font-size: 10px;
+  }
+
+  .message {
+    font-size: 12px; /* Small text for mobile */
+    line-height: 1.4;
+  }
+
+  .stars {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Very Small Mobile Screens */
+@media (max-width: 360px) {
+  .testimonial_card {
+    width: 180px;
+  }
+  .testimonial_section h2 {
+    font-size: 1.3rem;
+  }
+}
