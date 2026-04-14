@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/FarhanPortfolio">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
