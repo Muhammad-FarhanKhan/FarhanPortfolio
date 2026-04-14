@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Muhammad-FarhanKhan.github.io/FarhanPortfolio",
   "dependencies": {
     "body-parser": "^2.2.2",
     "cors": "^2.8.6",
